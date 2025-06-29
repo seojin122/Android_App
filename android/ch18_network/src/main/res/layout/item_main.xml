@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="특보"
+        android:id="@+id/title"
+        android:textSize="30dp"
+        android:textColor="#0000ff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="발표 날짜 시간"
+        android:id="@+id/tmFc"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지역 ID"
+         android:id="@+id/loc"
+        android:textColor="#ff0000"
+        android:textSize="20dp"/>
+</LinearLayout>

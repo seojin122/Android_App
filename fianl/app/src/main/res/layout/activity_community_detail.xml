@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="게시글 제목"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textDetailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="여기에 게시글 본문이 들어갑니다."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👍 0"
+                android:backgroundTint="#FFD600"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/editComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="댓글을 입력하세요"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnSubmitComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="댓글 등록"
+                android:backgroundTint="#FFD600"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:contentDescription="댓글 목록입니다." />
+</LinearLayout>
